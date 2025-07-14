@@ -1,0 +1,205 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Header & Nav */
+nav {
+  background-color: #ff69b4;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-buttons a {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+.nav-buttons a:hover {
+  background-color: #ffffff22;
+}
+
+.nav-buttons a.active {
+  background-color: #ffffff33;
+}
+
+/* Container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Home Section */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.home-text h1 {
+  color: #ffb6c1;
+  font-size: 2.5rem;
+}
+
+.home-text h2 {
+  margin-top: 1.5rem;
+  color: #f8bbd0;
+}
+
+.home-text p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.sobre-mi {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sobre-mi img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 3px solid #ff69b4;
+}
+
+/* Carrusel */
+.carousel {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ff69b4;
+  text-align: center;
+}
+
+.carousel-header {
+  font-weight: bold;
+  color: #ffb6c1;
+  margin-bottom: 0.5rem;
+}
+
+.carousel-content {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.carousel-buttons button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.carousel-buttons button:hover {
+  background-color: #ff1493;
+}
+
+/* Proyectos Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background-color: #1e1e1e;
+  border: 1px solid #ff69b4;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.project-card h3 {
+  color: #ffb6c1;
+  margin-bottom: 0.5rem;
+}
+
+/* Contact Form */
+form label {
+  display: block;
+  margin-top: 1rem;
+  color: #000;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #000;
+}
+
+form button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff69b4;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #ff1493;
+}
+
+#form-message {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #f8bbd0;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.redes a {
+  color: #f8bbd0;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.redes a:hover {
+  text-decoration: underline;
+}

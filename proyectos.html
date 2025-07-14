@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proyectos - EL CHISME</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #000000; /* fondo negro */
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      overflow-x: hidden; /* evita scroll horizontal */
+    }
+
+    /* Header ocupa todo el ancho viewport */
+    header {
+      background-color: #e91e63;
+      color: white;
+      width: 100vw;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 3px 8px rgb(233 30 99 / 0.4);
+    }
+
+    /* Contenedor interno para centrar contenido */
+    header nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+      user-select: none;
+    }
+
+    .nav-buttons a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 600;
+      padding-bottom: 3px;
+      border-bottom: 3px solid transparent;
+      transition: border-color 0.3s ease;
+    }
+
+    .nav-buttons a.active,
+    .nav-buttons a:hover {
+      border-bottom-color: #c2185b;
+    }
+
+    main.container {
+      max-width: 1200px;
+      width: 90%;
+      margin-top: 80px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+      color: #fff;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-weight: 700;
+      text-align: center;
+      font-size: 2.2rem;
+      letter-spacing: 1.2px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #141414;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(233, 30, 99, 0.3);
+      text-align: center;
+      color: #fff9f9;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(233, 30, 99, 0.6);
+    }
+
+    .icon-project {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 12px;
+      stroke: #e91e63;
+    }
+
+    .project-card h3 {
+      margin: 10px 0 8px 0;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #f48fb1;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      color: #ddd;
+      line-height: 1.4;
+    }
+
+    footer {
+      background-color: #e91e63;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      font-weight: 600;
+      letter-spacing: 1px;
+      user-select: none;
+      width: 100vw;
+      box-sizing: border-box;
+      position: relative;
+      bottom: 0;
+      margin-top: auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      main.container {
+        width: 95%;
+        padding: 1.5rem;
+      }
+    }
+
+    @media (max-width: 400px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      .project-card h3 {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">EL CHISME</div>
+    <div class="nav-buttons">
+      <a href="index.html">Inicio</a>
+      <a href="proyectos.html" class="active">Proyectos</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </nav>
+</header>
+
+<main class="container" role="main" aria-labelledby="projects-title">
+  <h1 id="projects-title">Mis Proyectos</h1>
+  <div class="projects-grid" aria-live="polite">
+    <!-- Primeras 3 tarjetas con ícono SVG -->
+    <div class="project-card">
+      <div class="icon-project" aria-label="Icono proyecto" role="img">
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#e91e63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 7v14h18V7" />
+          <path d="M16 3h-8v4h8V3z" />
+          <path d="M3 7l9 6 9-6" />
+        </svg>
+      </div>
+      <h3>Landing Page</h3>
+      <p>Página de aterrizaje moderna con diseño responsive.</p>
+    </div>
+
+    <div class="project-card">
+      <div class="icon-project" aria-label="Icono proyecto" role="img">
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#e91e63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 7v14h18V7" />
+          <path d="M16 3h-8v4h8V3z" />
+          <path d="M3 7l9 6 9-6" />
+        </svg>
+      </div>
+      <h3>Tienda Online</h3>
+      <p>Plataforma para vender productos en línea.</p>
+    </div>
+
+    <div class="project-card">
+      <div class="icon-project" aria-label="Icono proyecto" role="img">
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#e91e63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 7v14h18V7" />
+          <path d="M16 3h-8v4h8V3z" />
+          <path d="M3 7l9 6 9-6" />
+        </svg>
+      </div>
+      <h3>Lista de Tareas</h3>
+      <p>Aplicación para gestionar tareas diarias.</p>
+    </div>
+
+    <!-- Más proyectos generados por script -->
+    <script>
+      const container = document.currentScript.parentNode;
+      const titulos = [
+        "Gestor de Finanzas", "Clon de Netflix", "Portafolio Minimalista", "Dashboard de Administración",
+        "Calculadora Web", "Blog Personal", "Galería de Fotos", "Juego del Gato", "Trivia Interactiva",
+        "App del Clima", "Traductor de Idiomas", "Chat en Tiempo Real", "Control de Gastos",
+        "Reloj Digital", "Cronómetro Online", "Convertidor de Divisas", "Blog de Viajes", "Landing de Agencia",
+        "Web para Restaurante", "Agenda Virtual", "Sistema de Notas", "App de Recetas", "Mini red social",
+        "Visualizador de PDF", "Tienda de Ropa", "Web de Moda", "Catálogo de Productos", "Blog de Tecnología",
+        "Foro de Preguntas", "Formulario Animado"
+      ];
+
+      for (let i = 3; i < 30; i++) {
+        const title = titulos[i];
+        const card = document.createElement('div');
+        card.className = 'project-card';
+        card.innerHTML = `
+          <div class="icon-project" aria-label="Icono proyecto" role="img">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#e91e63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 7v14h18V7" />
+              <path d="M16 3h-8v4h8V3z" />
+              <path d="M3 7l9 6 9-6" />
+            </svg>
+          </div>
+          <h3>${title}</h3>
+          <p>Proyecto creativo y funcional: ${title}.</p>
+        `;
+        container.appendChild(card);
+      }
+    </script>
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 EL CHISME</p>
+</footer>
+
+</body>
+</html>
