@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto - EL CHISME</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #000000;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
+    }
+
+    /* Header ocupa todo el ancho */
+    header {
+      background-color: #e91e63;
+      color: white;
+      width: 100vw;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 3px 8px rgb(233 30 99 / 0.4);
+    }
+
+    header nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+      user-select: none;
+    }
+
+    .nav-buttons a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 600;
+      padding-bottom: 3px;
+      border-bottom: 3px solid transparent;
+      transition: border-color 0.3s ease;
+    }
+
+    .nav-buttons a.active,
+    .nav-buttons a:hover {
+      border-bottom-color: #c2185b;
+    }
+
+    main.container {
+      background: #fce4ec;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgb(233 30 99 / 0.25);
+      width: 50%;
+      min-width: 320px;
+      margin-top: 80px;
+      padding: 2.5rem 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+      color: #880e4f;
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #880e4f;
+      font-weight: 700;
+      text-align: center;
+      font-size: 2rem;
+      letter-spacing: 1.2px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.3rem;
+    }
+
+    label {
+      font-weight: 600;
+      color: #880e4f;
+      font-size: 1rem;
+    }
+
+    input, textarea {
+      padding: 12px 15px;
+      font-size: 1rem;
+      border: 2px solid #e91e63;
+      border-radius: 10px;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #c2185b;
+      box-shadow: 0 0 6px #f48fb1;
+      outline: none;
+      background: #fff;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 8px rgb(233 30 99 / 0.5);
+    }
+
+    button:hover {
+      background-color: #c2185b;
+    }
+
+    #form-message {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      text-align: center;
+      color: #388e3c;
+    }
+
+    #form-message.error {
+      color: #d32f2f;
+    }
+
+    .contact-info {
+      background: #f8bbd0;
+      border-radius: 12px;
+      padding: 1.8rem 2rem;
+      color: #880e4f;
+      box-shadow: inset 0 0 10px #f06292aa;
+      font-weight: 600;
+      line-height: 1.5;
+      width: 100%;
+      max-width: 1200px;
+      margin: 3rem 0 4rem 0;
+      user-select: none;
+    }
+
+    .contact-info h2 {
+      margin-top: 0;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 1rem;
+      letter-spacing: 1px;
+    }
+
+    .contact-info p {
+      margin: 6px 0;
+      font-size: 1rem;
+    }
+
+    .contact-info strong {
+      color: #6a003f;
+    }
+
+    footer {
+      background-color: #e91e63;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      font-weight: 600;
+      letter-spacing: 1px;
+      user-select: none;
+      width: 100vw;
+      box-shadow: 0 -3px 8px rgb(233 30 99 / 0.3);
+    }
+
+    @media (max-width: 900px) {
+      main.container {
+        width: 90%;
+        padding: 2rem;
+      }
+      .contact-info {
+        width: 90%;
+        margin: 2rem auto 3rem auto;
+      }
+    }
+
+    @media (max-width: 400px) {
+      button {
+        font-size: 1rem;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">EL CHISME</div>
+    <div class="nav-buttons">
+      <a href="index.html">Inicio</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="contacto.html" class="active">Contacto</a>
+    </div>
+  </nav>
+</header>
+
+<main class="container" role="main" aria-labelledby="contact-title">
+  <h1 id="contact-title">Contáctanos</h1>
+
+  <form id="contact-form">
+    <label for="name">Nombre:</label>
+    <input 
+      type="text" 
+      id="name" 
+      name="user_name" 
+      placeholder="Escribe tu nombre completo" 
+      required 
+    />
+
+    <label for="email">Correo Electrónico:</label>
+    <input 
+      type="email" 
+      id="email" 
+      name="user_email" 
+      placeholder="ejemplo@correo.com" 
+      required 
+    />
+
+    <label for="message">Mensaje:</label>
+    <textarea 
+      id="message" 
+      name="message" 
+      placeholder="Escribe aquí tu mensaje o consulta" 
+      required
+    ></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <p id="form-message" role="alert" aria-live="polite"></p>
+</main>
+
+<section class="contact-info" aria-label="Información de contacto">
+  <h2>Información de Contacto</h2>
+  <p><strong>Correo:</strong> jazmin.cantero@email.com</p>
+  <p><strong>Teléfono:</strong> +595 981 123456</p>
+  <p><strong>Correo:</strong> cristina.contretas@hotmail.com</p>
+  <p><strong>Teléfono:</strong> +595 981 123456</p>
+  <p><strong>Correo:</strong> jessica.lescano@hotmail.com</p>
+  <p><strong>Teléfono:</strong> +595 981 123456</p>
+  <p><strong>Dirección:</strong> Asunción, Paraguay</p>
+</section>
+
+<footer>
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <p>© 2025 El CHISME</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("TU_USER_ID"); // ← reemplaza con tu ID de usuario EmailJS
+
+    const form = document.getElementById("contact-form");
+    const messageEl = document.getElementById("form-message");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+      messageEl.textContent = "";
+      messageEl.classList.remove("error");
+
+      emailjs.sendForm("TU_SERVICE_ID", "TU_TEMPLATE_ID", this)
+        .then(() => {
+          messageEl.textContent = "¡Mensaje enviado con éxito! Gracias por contactarnos.";
+          messageEl.classList.remove("error");
+          form.reset();
+        })
+        .catch(() => {
+          messageEl.textContent = "Error al enviar el mensaje. Por favor, intenta nuevamente.";
+          messageEl.classList.add("error");
+        });
+    });
+  })();
+</script>
+
+</body>
+</html>
