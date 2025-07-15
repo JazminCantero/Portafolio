@@ -22,6 +22,7 @@ Accede a la página desplegada en tu plataforma de hosting preferida (Netlify, V
 <img width="1911" height="956" alt="image" src="https://github.com/user-attachments/assets/d9f95d27-f8a8-4b26-97ce-4b370c006d51" />
 <img width="1891" height="954" alt="image" src="https://github.com/user-attachments/assets/1528716c-597f-48cd-982f-8d4f515b888c" />
 <img width="1911" height="964" alt="image" src="https://github.com/user-attachments/assets/a10d3ba2-c7c3-4235-864d-3951a5fbbeca" />
+<img width="1627" height="651" alt="image" src="https://github.com/user-attachments/assets/eeba2bd6-8c13-4c5d-9c90-f4b07e577b06" />
 
 ---
 ## 🧰 Tecnologías utilizadas
