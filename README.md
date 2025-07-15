@@ -16,9 +16,14 @@ Accede a la página desplegada en tu plataforma de hosting preferida (Netlify, V
 - **Página de inicio:** Presentación del equipo y filosofía de trabajo.  
 - **Sección de proyectos:** Lista y descripción de los trabajos realizados.  
 - **Contacto:** Formulario funcional para que los visitantes nos envíen mensajes.  
+<img width="1905" height="950" alt="image" src="https://github.com/user-attachments/assets/77e1397d-5580-46fc-86db-6f93611640d1" />
+<img width="1910" height="954" alt="image" src="https://github.com/user-attachments/assets/bc1eece5-edfb-4cb0-acdb-f3f97eaf1404" />
+<img width="1899" height="962" alt="image" src="https://github.com/user-attachments/assets/b992adaa-6633-4ab7-bb41-2360dd6f4826" />
+<img width="1911" height="956" alt="image" src="https://github.com/user-attachments/assets/d9f95d27-f8a8-4b26-97ce-4b370c006d51" />
+<img width="1891" height="954" alt="image" src="https://github.com/user-attachments/assets/1528716c-597f-48cd-982f-8d4f515b888c" />
+<img width="1911" height="964" alt="image" src="https://github.com/user-attachments/assets/a10d3ba2-c7c3-4235-864d-3951a5fbbeca" />
 
 ---
-
 ## 🧰 Tecnologías utilizadas
 
 - HTML5  
