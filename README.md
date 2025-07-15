@@ -7,7 +7,7 @@ Bienvenido a **EL CHISME**, un portafolio digital creado por un grupo de chicas 
 ## 🌐 Sitio web en línea
 
 Accede a la página desplegada en tu plataforma de hosting preferida (Netlify, Vercel, etc).  
-**URL:** `https://tusitio.netlify.app` (reemplaza con tu link real)
+**URL:** `https://portafolio-flame-ten-42.vercel.app/index.html` (reemplaza con tu link real)
 
 ---
 
@@ -33,7 +33,7 @@ Accede a la página desplegada en tu plataforma de hosting preferida (Netlify, V
 
 Este proyecto está desplegado es:
 
-- [Netlify](https://www.netlify.com)  
+- Versel
 
 
 ---
